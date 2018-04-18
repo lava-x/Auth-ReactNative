@@ -22,13 +22,18 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor(props) {
+    this.state = {
+      user: ""
+    }
+  }
   render() {
     const _this = this;
     return (
       <View style={styles.container}>
         <FBLogin style={{ marginBottom: 10, }}
         ref={(fbLogin) => { this.fbLogin = fbLogin }}
-        permissions={["email","user_friends"]}
+        permissions={["public_profile"]}
         loginBehavior={FBLoginManager.LoginBehaviors.Native}
         onLogin={function(data){
           alert("Logged in!");
