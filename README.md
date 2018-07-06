@@ -1,4 +1,4 @@
 # React Native Login Integration
 
 Facebook login authentication using Facebook SDK
-Module: react-native-facebook-login
+https://github.com/magus/react-native-facebook-login
